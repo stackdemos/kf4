@@ -1,0 +1,35 @@
+parameters:
+  - name: application.bucket.endpoint
+    value: 'https://kubeflow-acm-ecr-minio.app.base-k8s-acm.sol01.superhub.io'
+  - name: application.bucket.endpoint.internal
+    value: 'http://kubeflow-acm-ecr-minio.minio.svc.cluster.local:9000'
+  - name: application.bucket.name
+    value: default
+  - name: application.bucket.region
+    value: us-east-1
+  - name: application.description
+    value: Kubeflow pipeline
+  - name: application.name
+    value: kf4
+  - name: component.dex.okta.appId
+    value: 0oa4w06vseSQF9grh2p7
+  - name: component.dex.okta.clientId
+    value: 0oa4w06vseSQF9grh2p7
+  - name: component.dex.okta.issuer
+    value: 'https://agilestacks.okta.com'
+  - name: component.github.repository.name
+    value: kf4
+  - name: component.github.repository.organization
+    value: stackdemos
+outputs:
+  - name: application.bucket.endpoint
+  - name: application.bucket.endpoint.internal
+  - name: application.bucket.name
+  - name: application.bucket.region
+  - name: application.description
+  - name: application.name
+  - name: component.dex.okta.appId
+  - name: component.dex.okta.clientId
+  - name: component.dex.okta.issuer
+  - name: component.github.repository.name
+  - name: component.github.repository.organization
